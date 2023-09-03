@@ -126,9 +126,13 @@ nav {
 }
 
 .section-hero {
-  background-color: var(--navyblue);
+  background: url(/img/po.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--grey, rgba(46, 47, 66, 0.7));
   text-align: center;
   padding: 188px 0;
+  background-blend-mode: darken;
 }
 
 .section-hero button {
@@ -143,6 +147,9 @@ nav {
   line-height: 24px;
   padding: 16px 32px;
 }
+.section-hero button:hover {
+  background: var(--ocean);
+}
 
 .features-list-item {
   display: inline-flex;
@@ -155,6 +162,7 @@ nav {
 .features-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .feature-list-title {
@@ -209,6 +217,7 @@ nav {
 .team-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .team-member {
@@ -218,6 +227,7 @@ nav {
   letter-spacing: 0.4px;
   color: var(--navyblue);
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-position {
@@ -268,6 +278,7 @@ nav {
 }
 
 .footer-paragraph {
+  margin-top: 16px;
   font-size: 16px;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
@@ -280,23 +291,6 @@ nav {
 .footer {
   background: var(--navyblue);
   padding: 120px 0;
-}
-
-.filter-button-item.active {
-  border-color: var(--ocean);
-  border-radius: 4px;
-  background: var(--ocean);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  color: var(--cornflower);
-  color: var(--white, #fff);
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.64px;
-  padding: 12px 24px;
 }
 
 .filter-button-item {
@@ -323,15 +317,13 @@ nav {
 }
 
 .portfolio-feature-title {
-  padding: 32px 0 0 16px;
+  margin-bottom: 8px;
 }
 
-.portfolio-feature-designation {
-  padding: 8px 16px 32px;
-}
 .portfolio-item-details {
+  border: 1px solid var(--cornflower);
   background-color: var(--white);
-  padding: 23px 16px;
+  padding: 32px 16px;
 }
 .team {
   background-color: var(--cloud);
@@ -340,15 +332,11 @@ nav {
   padding-bottom: 96px;
 }
 .portfolio-features-list-item {
+  justify-content: center;
   display: flex;
   column-gap: 24px;
   row-gap: 48px;
   flex-wrap: wrap;
-}
-
-.portfolio-features-list {
-  border: 1px solid var(--cornflower);
-  background: var(--white);
 }
 
 .address-contacts-list a:hover,
@@ -367,4 +355,5 @@ nav {
   background-color: var(--ocean);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  border-color: var(--ocean);
 }
