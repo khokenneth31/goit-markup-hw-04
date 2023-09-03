@@ -124,15 +124,14 @@ nav {
   color: var(--white);
   margin-bottom: 48px;
 }
-
 .section-hero {
-  background: url(/img/po.jpg);
+  background-image: url(/img/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--grey, rgba(46, 47, 66, 0.7));
+  background-color: var(--grey);
+  background-blend-mode: darken;
   text-align: center;
   padding: 188px 0;
-  background-blend-mode: darken;
 }
 
 .section-hero button {
@@ -162,7 +161,6 @@ nav {
 .features-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
 }
 
 .feature-list-title {
@@ -213,11 +211,14 @@ nav {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-
+.team-link:hover,
+.team-list-item:hover {
+  cursor: pointer;
+  background-color: var(--ocean);
+}
 .team-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
 }
 
 .team-member {
@@ -227,7 +228,6 @@ nav {
   letter-spacing: 0.4px;
   color: var(--navyblue);
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .team-position {
@@ -236,8 +236,38 @@ nav {
   font-size: 16px;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
+  margin: 8px 0;
 }
-
+.team-links {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  justify-content: center;
+}
+.team-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: var(--iris);
+  border-radius: 100px;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  justify-content: center;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: var(--iris);
+  border-radius: 100px;
+}
 .portfolio-feature-title {
   font-size: 20px;
   font-weight: 500;
@@ -278,7 +308,6 @@ nav {
 }
 
 .footer-paragraph {
-  margin-top: 16px;
   font-size: 16px;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
@@ -317,26 +346,41 @@ nav {
 }
 
 .portfolio-feature-title {
-  margin-bottom: 8px;
+  padding: 32px 0 0 16px;
 }
 
+.portfolio-feature-designation {
+  padding: 8px 16px 32px;
+}
 .portfolio-item-details {
-  border: 1px solid var(--cornflower);
   background-color: var(--white);
-  padding: 32px 16px;
+  padding: 23px 16px;
+}
+.portfolio-item-details:hover {
+  cursor: pointer;
+  border: 1px solid var(--cloud);
+  background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team {
   background-color: var(--cloud);
 }
+
 .section-portfolio-features {
   padding-bottom: 96px;
 }
 .portfolio-features-list-item {
-  justify-content: center;
   display: flex;
   column-gap: 24px;
   row-gap: 48px;
   flex-wrap: wrap;
+}
+
+.portfolio-features-list {
+  border: 1px solid var(--cornflower);
+  background: var(--white);
 }
 
 .address-contacts-list a:hover,
@@ -355,5 +399,4 @@ nav {
   background-color: var(--ocean);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  border-color: var(--ocean);
 }
