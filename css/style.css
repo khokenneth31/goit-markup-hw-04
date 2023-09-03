@@ -149,18 +149,28 @@ nav {
 .section-hero button:hover {
   background: var(--ocean);
 }
-
 .features-list-item {
+  background-color: var(--cloud);
   display: inline-flex;
   flex-direction: column;
   width: 264px;
   justify-content: center;
   box-sizing: content-box;
 }
-
+.feature-list-title,
+.features-list-description {
+  background-color: var(--white);
+}
 .features-list {
   display: flex;
   gap: 24px;
+}
+.features-icon {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature-list-title {
@@ -203,6 +213,13 @@ nav {
   background-color: var(--white);
   padding: 32px 16px;
 }
+.social-media-item-details {
+  display: inline-block;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 .team-list-item {
   display: inline-block;
   border-radius: 0px 0px 4px 4px;
@@ -229,6 +246,14 @@ nav {
   color: var(--navyblue);
   text-align: center;
 }
+.social-media-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+  color: var(--white);
+  text-align: center;
+}
 
 .team-position {
   color: var(--slate);
@@ -253,21 +278,7 @@ nav {
   background-color: var(--iris);
   border-radius: 100px;
 }
-.footer-links {
-  display: flex;
-  align-items: center;
-  column-gap: 24px;
-  justify-content: center;
-}
-.footer-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  background-color: var(--iris);
-  border-radius: 100px;
-}
+
 .portfolio-feature-title {
   font-size: 20px;
   font-weight: 500;
@@ -308,13 +319,29 @@ nav {
 }
 
 .footer-paragraph {
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
+
   width: 264px;
-  display: flex;
-  flex-direction: column;
   color: var(--cloud);
+}
+.social-media-links {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  justify-content: center;
+}
+.social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: var(--iris);
+  border-radius: 100px;
 }
 
 .footer {
