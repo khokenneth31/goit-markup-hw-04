@@ -323,7 +323,6 @@ nav {
 
 .nav-logo-footer {
   text-decoration: none;
-  margin-bottom: 16px;
 }
 
 .white-logo {
@@ -357,10 +356,7 @@ nav {
   padding: 120px 0;
 }
 .footer-list-item {
-  display: inline-flex;
-  flex-direction: column;
   width: 264px;
-  justify-content: center;
   box-sizing: content-box;
   margin-right: 120px;
 }
@@ -377,6 +373,7 @@ nav {
   margin-bottom: 16px;
 }
 .footer-paragraph {
+  margin-top: 17.5px;
   font-size: 16px;
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
