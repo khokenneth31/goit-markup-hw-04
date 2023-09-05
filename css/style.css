@@ -285,6 +285,29 @@ nav {
   background-color: var(--iris);
   border-radius: 100px;
 }
+.section-customer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  padding: 120px 40px;
+}
+.customer-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.customer-list-item {
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .portfolio-feature-title {
   font-size: 20px;
@@ -309,6 +332,7 @@ nav {
   line-height: 48px; /* 120% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .iris-logo {
@@ -394,6 +418,9 @@ nav {
   background-color: var(--iris);
   border-radius: 100px;
 }
+.footer-link:hover {
+  background-color: var(--ocean);
+}
 
 .filter-button-item {
   border-radius: 4px;
@@ -470,6 +497,7 @@ nav {
 .top-buttons button:focus {
   color: var(--white);
   background-color: var(--ocean);
+  border-color: var(--ocean);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
