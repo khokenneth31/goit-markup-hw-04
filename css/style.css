@@ -77,8 +77,6 @@ body {
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
 }
-.nav-list-item-link:hover {
-}
 
 .address-contact-item-link {
   text-decoration: none;
@@ -127,11 +125,11 @@ nav {
   margin-bottom: 48px;
 }
 .section-hero {
-  background-image: url(../img/hero.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 07)),
+    url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--grey);
-  background-blend-mode: darken;
+  background-color: var(--navyblue);
   text-align: center;
   padding: 188px 0;
   background-color: var(--navyblue);
@@ -302,6 +300,9 @@ nav {
   align-items: center;
   gap: 24px;
 }
+.customer-icons {
+  padding: 32px 16px;
+}
 .customer-list-item {
   width: 168px;
   height: 88px;
@@ -317,6 +318,7 @@ nav {
   line-height: 24px; /* 120% */
   letter-spacing: 0.4px;
   color: var(--navyblue);
+  margin-bottom: 8px;
 }
 
 .portfolio-feature-designation {
@@ -446,24 +448,18 @@ nav {
   padding: 96px 0 72px;
 }
 
-.portfolio-feature-title {
-  padding: 32px 0 0 16px;
-}
-
 .portfolio-feature-designation {
-  padding: 8px 16px 32px;
+  margin-bottom: 8px;
 }
 .portfolio-item-details {
+  border: 1px solid var(--cornflower);
+  border-top: unset;
   background-color: var(--white);
   padding: 32px 16px;
 }
 .portfolio-item-details:hover {
-  cursor: pointer;
   border: 1px solid var(--cloud);
   background: var(--white);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team {
   background-color: var(--cloud);
