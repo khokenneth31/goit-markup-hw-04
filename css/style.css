@@ -314,6 +314,7 @@ nav {
   line-height: 24px; /* 120% */
   letter-spacing: 0.4px;
   color: var(--navyblue);
+  margin-bottom:8px;
 }
 
 .portfolio-feature-designation {
@@ -443,21 +444,14 @@ nav {
   padding: 96px 0 72px;
 }
 
-.portfolio-feature-title {
-  padding: 32px 0 0 16px;
-}
 
-.portfolio-feature-designation {
-  padding: 8px 16px 32px;
-}
 .portfolio-item-details {
+  border: 1px solid var(--cornflower);
+  border-top:unset;
   background-color: var(--white);
-  padding: 23px 16px;
+  padding: 32px 16px;
 }
-.portfolio-item-details:hover {
-  cursor: pointer;
-  border: 1px solid var(--cloud);
-  background: var(--white);
+.portfolio-features-list:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -477,7 +471,6 @@ nav {
 }
 
 .portfolio-features-list {
-  border: 1px solid var(--cornflower);
   background: var(--white);
 }
 
