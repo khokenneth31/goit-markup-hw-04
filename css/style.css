@@ -125,13 +125,12 @@ nav {
   margin-bottom: 48px;
 }
 .section-hero {
-  background-image: url(../img/hero.jpg);
+  background-image: linear-gradiant(rgb(46,47,66,0.7), rgb(46,47,66,07)),url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--grey);
-  background-blend-mode: darken;
   text-align: center;
   padding: 188px 0;
+  background-color:var(--navyblue);
 }
 
 .section-hero button {
