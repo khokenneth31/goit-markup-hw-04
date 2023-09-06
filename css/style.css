@@ -128,7 +128,7 @@ nav {
   margin-bottom: 48px;
 }
 .section-hero {
-  background-image: linear-gradiant(rgba(46,47,66,0.7), rgba(46,47,66,07)),url(../img/hero.jpg);
+  background-image: url(../img/hero.jpg),linear-gradiant(rgba(46,47,66,0.7), rgba(46,47,66,07)) ;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
