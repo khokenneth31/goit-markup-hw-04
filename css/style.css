@@ -64,22 +64,9 @@ body {
   color: var(--iris);
 }
 
-.nav-list {
-  display: flex;
-  gap: 40px;
-}
-
-.nav-list-item-link {
-  text-decoration: none;
-  color: var(--navyblue);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
-}
-
 .address-contact-item-link {
   text-decoration: none;
+  font-size: 16px;
   color: var(--slate);
 }
 
@@ -88,17 +75,13 @@ body {
   justify-content: space-between;
 }
 
-.nav-list {
-  display: inline-flex;
-}
-
 .address-contacts-list {
   display: inline-flex;
   gap: 40px;
 }
 
 .header {
-  padding: 24px 0;
+  padding: 24px 0 4px 0;
 }
 
 nav {
@@ -488,11 +471,6 @@ nav {
   color: var(--iris);
 }
 
-.nav-list a:hover,
-.nav-list a:focus {
-  color: var(--iris);
-}
-
 .filter-button-item:hover,
 .top-buttons button:focus {
   color: var(--white);
@@ -500,4 +478,40 @@ nav {
   border-color: var(--ocean);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--iris);
+}
+.nav-list {
+  display: inline-flex;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list-item-link {
+  text-decoration: none;
+  color: var(--navyblue);
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.nav-list-item-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--ocean);
+}
+
+.nav-list-item-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
