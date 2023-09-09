@@ -110,7 +110,10 @@ nav {
   margin-bottom: 48px;
 }
 .section-hero {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 07)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -284,6 +287,23 @@ nav {
   align-items: center;
   gap: 72px;
 }
+.icon-clients-item-link {
+  color: var(--lightslate);
+}
+.icon-clients-item:hover .icon-clients-item-link {
+  color: var(--ocean);
+}
+
+.icon-clients-item:hover {
+  border-color: var(--ocean);
+}
+
+.icon-clients-item {
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--lightslate);
+}
 
 .icon-clients-container {
   display: flex;
@@ -294,16 +314,16 @@ nav {
   display: block;
   width: 168px;
   height: 88px;
-  border-radius: 4px;
-  fill: var(--lightslate);
-  border: 1px solid var(--lightslate);
+  fill: currentColor;
 }
+/*
 .icon-clients:hover,
 .icon-clients:focus {
   cursor: pointer;
   fill: var(--ocean);
   border-color: var(--ocean);
-}
+}*/
+
 .portfolio-feature-title {
   font-size: 20px;
   font-weight: 500;
